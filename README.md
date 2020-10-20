@@ -1,6 +1,6 @@
 # Machine-Learning
 
-Part of learning ML models and its implementation with Python (will try R later).
+Part of learning Machine Learning models and its implementation with Python (will try R later).
 
 ### Topics and Contents
 This repo contains several topics, mainly in models of Machine Learning, including:
@@ -15,15 +15,15 @@ This repo contains several topics, mainly in models of Machine Learning, includi
 9. Dimensionality Reduction
 10. Model Selection
 
-There are also some sample datasets to use as an experiment.
+There are some small datasets to experiment on.
 
 Also, there are some documentation and self-taken notes in it.
 
 ### Environment
-This code is purposely made in Spyder IDE so it contains **#%%** to make notebook cells.
+This code is purposely made in Spyder IDE so it contains *#%%* to make notebook cells.
 Why Spyder?
-1. Convenient
-2. All-Rounder 
+1. Convenient and Practical
+2. All-Rounder IDE
 3. Cool and Adaptive Design
 
 ### Reference
