@@ -58,20 +58,21 @@ print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),
 
 #%%
 # Backward Elimination Model
-import statsmodels.api as sm
-X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
+import statsmodels.formula.api as sm
+
+# Backward Elimination Function
+def backwardElimination(x, sl):
+    numVars = len(x[0])
+    for i in range(0, numVars):
+        regressor_OLS = sm.OLS(y, x).fit()
+        maxVar = max(regressor_OLS.pvalues).astype(float)
+        if maxVar > sl:
+            for j in range(0, numVars - i):
+                if (regressor_OLS.pvalues[j].astype(float) == maxVar):
+                    x = np.delete(x, j, 1)
+    regressor_OLS.summary()
+    return x
+
+SL = 0.05
 X_opt = X[:, [0, 1, 2, 3, 4, 5]]
-X_opt = X_opt.astype(np.float64)
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()X_opt = X[:, [0, 1, 3, 4, 5]]
-X_opt = X_opt.astype(np.float64)
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()X_opt = X[:, [0, 3, 4, 5]]
-X_opt = X_opt.astype(np.float64)
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()X_opt = X[:, [0, 3, 5]]
-X_opt = X_opt.astype(np.float64)
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()X_opt = X[:, [0, 3]]
-X_opt = X_opt.astype(np.float64)regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()
+X_Modeled = backwardElimination(X_opt, SL)
