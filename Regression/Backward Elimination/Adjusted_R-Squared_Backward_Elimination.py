@@ -1,8 +1,15 @@
 #%%
 # Adjusted R-Squared Backward Elimination
+# Evaluation of Regression Model
 
 #%%
-# Backward Elimination with Adjusted R-Squared
+# What we want in a model: Low Bias and Low Variance
+# Low Bias: We get predicted results that are not far from the real values
+# Low Variance: We get results that are not too different by applying the same model many times
+# Mostly we get a Bias-Variance Tradeoff and we should minimize both to get optimal models
+
+#%%
+# Backward Elimination with Adjusted R- for 5 Independent Variables
 import statsmodels.formula.api as sm
 
 def backwardElimination(x, SL):
