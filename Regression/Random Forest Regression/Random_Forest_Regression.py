@@ -21,7 +21,7 @@ y = dataset.iloc[:, -1].values
 #%%
 # Random Forest Model
 from sklearn.ensemble import RandomForestRegressor
-RandomForest = RandomForestRegressor(n_estimators = 10 , random_state = 0)
+RandomForest = RandomForestRegressor(n_estimators = n , random_state = 0)
 RandomForest.fit(X, y)
 
 #%%
