@@ -28,3 +28,6 @@ Why Spyder?
 
 ### Reference
 Source: Machine Learning A-Z
+
+### Notes
+* I tweaked some parts of the code (including empty file name, undefined variables) so the user can use it more flexibly with their own datasets.
