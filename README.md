@@ -1,6 +1,6 @@
 # Machine-Learning
 
-Part of learning Machine Learning models and its implementation with Python (will try R later).
+Machine Learning models and its implementation with Python and R.
 
 ### Topics and Contents
 This repo contains several topics, mainly in models of Machine Learning, including:
@@ -27,7 +27,7 @@ Why Spyder?
 3. Cool and Adaptive Design
 
 ### Reference
-Source: Machine Learning A-Z
+Machine Learning A-Z
 
 ### Notes
 * I tweaked some parts of the code (including empty file name, undefined variables) so the user can use it more flexibly with their own datasets.
