@@ -9,7 +9,7 @@ import pandas as pd
 
 #%%
 # Dataset
-dataset = pd.read_csv('Mall_Customers.csv')
+dataset = pd.read_csv("")
 X = dataset.iloc[:, [3, 4]].values
 
 #%%
