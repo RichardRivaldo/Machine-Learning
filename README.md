@@ -15,9 +15,7 @@ This repo contains several topics, mainly in models of Machine Learning, includi
 9. Dimensionality Reduction
 10. Model Selection
 
-There are some small datasets to experiment on.
-
-Also, there are some documentation and self-taken notes in it.
+There are some small datasets to experiment on, also some documentations and self-taken notes in it.
 
 ### Environment
 This code is purposely made in Spyder IDE so it contains *#%%* to make notebook cells.
@@ -30,4 +28,5 @@ Why Spyder?
 Machine Learning A-Z
 
 ### Notes
-* I tweaked some parts of the code (including empty file name, undefined variables) so the user can use it more flexibly with their own datasets.
+* There are some intentionally left empty parts in the source codes to be filled with entries needed later.
+* Make sure to download and install libraries needed for the computational processes in Spyder IDE.
