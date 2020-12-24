@@ -17,7 +17,7 @@ from nltk.stem.porter import PorterStemmer
 #%%
 # Dataset
 # Quoting = 3 to ignore quotes
-dataset = pd.read_csv("Restaurant_Reviews.tsv", delimiter = '\t', quoting = 3)
+dataset = pd.read_csv("", delimiter = '\t', quoting = 3)
 
 #%%
 # Text Cleaning

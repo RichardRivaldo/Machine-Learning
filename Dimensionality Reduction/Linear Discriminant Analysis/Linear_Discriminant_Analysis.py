@@ -9,7 +9,7 @@ import pandas as pd
 
 #%%
 # Dataset
-dataset = pd.read_csv("Wine.csv")
+dataset = pd.read_csv("")
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
 

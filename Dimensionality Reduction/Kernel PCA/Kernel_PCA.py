@@ -1,5 +1,5 @@
 #%%
-# Principal Component Analysis (PCA)
+# Kernel PCA
 
 #%%
 # Libraries
@@ -26,11 +26,11 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 #%%
-# Principal Component Analysis
-from sklearn.decomposition import PCA
-pca = PCA(n_components = 2)
-X_train = pca.fit_transform(X_train)
-X_test = pca.transform(X_test)
+# Kernel PCA
+from sklearn.decomposition import KernelPCA
+kpca = KernelPCA(n_components = 2, kernel = 'rbf')
+X_train = kpca.fit_transform(X_train)
+X_test = kpca.transform(X_test)
 
 #%%
 # Training with Logistic Regression Model
@@ -51,7 +51,7 @@ Accuracy = accuracy_score(y_test, y_pred)
 print(Accuracy)
 
 #%%
-# Training Set Visualization
+# Training Set Visualization 
 from matplotlib.colors import ListedColormap
 X_set, y_set = X_train, y_train
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
@@ -70,7 +70,7 @@ plt.legend()
 plt.show()
 
 #%%
-# Test Set Visualization
+# Test Set Visualization 
 from matplotlib.colors import ListedColormap
 X_set, y_set = X_test, y_test
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
