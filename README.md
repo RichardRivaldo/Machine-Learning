@@ -1,6 +1,6 @@
 # Machine-Learning
 
-Machine Learning models and its implementation with Python and R.
+Machine Learning models implementations with Python and R.
 
 ### Topics and Contents
 This repo contains several topics, mainly in models of Machine Learning, including:
